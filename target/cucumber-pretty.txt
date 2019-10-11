@@ -1,0 +1,675 @@
+@Contact_Detail
+Feature: Contact Detail Section
+
+  @CD_AC1
+  Scenario Outline: Verify that user should able to view the subsection of the Main Contact Person                                                                      # ContactDetailSection.feature:9
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    When user navigates to "Contact Details" screen
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"
+    And user should verifies the following fields Name,Job Title,Contact No,Email,Alternate Contact Person's Email,Mailing Address are available in Contact Detail page
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # ContactDetailSection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @CD_AC1 @Contact_Detail
+  Scenario Outline: Verify that user should able to view the subsection of the Main Contact Person                                                                      # ContactDetailSection.feature:20
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                                                                             # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                                                                       # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                                                                        # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user navigates to "Contact Details" screen                                                                                                                     # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                                                                          # ContactDetailsSteps.user_verifies_the_text(String)
+    And user should verifies the following fields Name,Job Title,Contact No,Email,Alternate Contact Person's Email,Mailing Address are available in Contact Detail page # ContactDetailsSteps.user_should_verifies_the_following_fields_Name_Job_Title_Contact_No_Email_Alternate_Contact_Person_s_Email_Mailing_Address_are_available_in_Contact_Detail_page()
+    And user should able to logged out successfully                                                                                                                     # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                                                                                   # CommonSteps.close_browser()
+
+  @CD_AC2
+  Scenario Outline: Verify that user should able to validate the auto populate values Blk/Hse No and Street details # ContactDetailSection.feature:24
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    When user navigates to "Contact Details" screen
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"
+    When user should able to enter the postal code "460096"in mailing address
+    Then user verifies Blk/Hse No "96" and Street "BEDOK NORTH AVENUE 4" should autopopulate
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # ContactDetailSection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @Contact_Detail @CD_AC2
+  Scenario Outline: Verify that user should able to validate the auto populate values Blk/Hse No and Street details # ContactDetailSection.feature:36
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                         # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                   # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                    # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user navigates to "Contact Details" screen                                                                 # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+    When user should able to enter the postal code "460096"in mailing address                                       # ContactDetailsSteps.user_should_able_to_enter_the_postal_code_in_mailing_address(String)
+    Then user verifies Blk/Hse No "96" and Street "BEDOK NORTH AVENUE 4" should autopopulate                        # ContactDetailsSteps.user_verifies_Blk_Hse_No_and_Street_should_autopopulate(String,String)
+    And user should able to logged out successfully                                                                 # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                               # CommonSteps.close_browser()
+
+  @CD_AC3
+  Scenario Outline: Verify that user should able to validate the auto populate values when click checkbox ‘Same as registered address in Company Profile’ # ContactDetailSection.feature:40
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    When user navigates to "Contact Details" screen
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"
+    When user clicks on checkbox for the field Same as registered address in Company Profile
+    Then user validates the postal code "453123" , Level "03" , and Unit "19"
+    And user verifies Blk/Hse No "45" and Street "CHOA CHU KANG CENTRAL" should autopopulate
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # ContactDetailSection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @Contact_Detail @CD_AC3
+  Scenario Outline: Verify that user should able to validate the auto populate values when click checkbox ‘Same as registered address in Company Profile’ # ContactDetailSection.feature:54
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                                                               # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                                                         # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                                                          # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user navigates to "Contact Details" screen                                                                                                       # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                                                            # ContactDetailsSteps.user_verifies_the_text(String)
+    When user clicks on checkbox for the field Same as registered address in Company Profile                                                              # ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile()
+    Then user validates the postal code "453123" , Level "03" , and Unit "19"                                                                             # ContactDetailsSteps.user_validates_the_postal_code_Level_and_Unit(String,String,String)
+    And user verifies Blk/Hse No "45" and Street "CHOA CHU KANG CENTRAL" should autopopulate                                                              # ContactDetailsSteps.user_verifies_Blk_Hse_No_and_Street_should_autopopulate(String,String)
+    And user should able to logged out successfully                                                                                                       # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                                                                     # CommonSteps.close_browser()
+
+  @CD_AC4
+  Scenario Outline: Verify that user should able to view the subsection of the Letter of Office Addressee # ContactDetailSection.feature:57
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    When user navigates to "Contact Details" screen
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"
+    And user should verfies the following fields Name, Job Title, Email
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # ContactDetailSection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @CD_AC4 @Contact_Detail
+  Scenario Outline: Verify that user should able to view the subsection of the Letter of Office Addressee # ContactDetailSection.feature:69
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                               # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                         # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                          # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user navigates to "Contact Details" screen                                                       # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                            # ContactDetailsSteps.user_verifies_the_text(String)
+    And user should verfies the following fields Name, Job Title, Email                                   # ContactDetailsSteps.user_should_verfies_the_following_fields_Name_Job_Title_Email()
+    And user should able to logged out successfully                                                       # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                     # CommonSteps.close_browser()
+
+  @CD_AC5
+  Scenario Outline: Verify that user should able to validate the auto populate values when click checkbox 'Same as main contact person' # ContactDetailSection.feature:74
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    When user navigates to "Contact Details" screen
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"
+    When user should able to enter the values in the field "<Name>" "<Job_Title>" "<Contact_NO>" "<Email>"
+    And user clicks for the field of same as main contact person
+    Then verifies the value populate in subsection of the Letter of office Addrssee "<Name>" "<Job_Title>" "<Email>"
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # ContactDetailSection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @CD_AC5 @Contact_Detail
+  Scenario Outline: Verify that user should able to validate the auto populate values when click checkbox 'Same as main contact person' # ContactDetailSection.feature:88
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                                             # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                                       # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                                        # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user navigates to "Contact Details" screen                                                                                     # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                                          # ContactDetailsSteps.user_verifies_the_text(String)
+    When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com"                      # ContactDetailsSteps.user_should_able_to_enter_the_values_in_the_field(String,String,String,String)
+    And user clicks for the field of same as main contact person                                                                        # ContactDetailsSteps.user_clicks_for_the_field_of_same_as_main_contact_person()
+    Then verifies the value populate in subsection of the Letter of office Addrssee "GovTech" "Software Developer" "test@co.com"        # ContactDetailsSteps.verifies_the_value_populate_in_subsection_of_the_Letter_of_office_Addrssee(String,String,String)
+    And user should able to logged out successfully                                                                                     # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                                                   # CommonSteps.close_browser()
+
+  @CD_AC6
+  Scenario Outline: Verify that user should able to validate the saved values after refresh the page                 # ContactDetailSection.feature:92
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    When user navigates to "Contact Details" screen
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"
+    When user should able to enter the values in the field "<Name>" "<Job_Title>" "<Contact_NO>" "<Email>"
+    And user clicks for the field of same as main contact person
+    Then verifies the value populate in subsection of the Letter of office Addrssee "<Name>" "<Job_Title>" "<Email>"
+    When user clicks on save button
+    And user refreshes the page
+    Then verifies the value populate in subsection of the Letter of office Addrssee "<Name>" "<Job_Title>" "<Email>"
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # ContactDetailSection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @CD_AC6 @Contact_Detail
+  Scenario Outline: Verify that user should able to validate the saved values after refresh the page                             # ContactDetailSection.feature:109
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                                      # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                                # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                                 # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user navigates to "Contact Details" screen                                                                              # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                                   # ContactDetailsSteps.user_verifies_the_text(String)
+    When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com"               # ContactDetailsSteps.user_should_able_to_enter_the_values_in_the_field(String,String,String,String)
+    And user clicks for the field of same as main contact person                                                                 # ContactDetailsSteps.user_clicks_for_the_field_of_same_as_main_contact_person()
+    Then verifies the value populate in subsection of the Letter of office Addrssee "GovTech" "Software Developer" "test@co.com" # ContactDetailsSteps.verifies_the_value_populate_in_subsection_of_the_Letter_of_office_Addrssee(String,String,String)
+    When user clicks on save button                                                                                              # EligibilitySectionSteps.user_clicks_on_save_button()
+    And user refreshes the page                                                                                                  # EligibilitySectionSteps.user_refreshes_the_page()
+    Then verifies the value populate in subsection of the Letter of office Addrssee "GovTech" "Software Developer" "test@co.com" # ContactDetailsSteps.verifies_the_value_populate_in_subsection_of_the_Letter_of_office_Addrssee(String,String,String)
+    And user should able to logged out successfully                                                                              # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                                            # CommonSteps.close_browser()
+@Eligibility
+Feature: Eligibility Section
+
+  @Testj
+  Scenario Outline: Verify that user should able to access the Four questions in the Eligibility section # EligibilitySection.feature:9
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    Then Question "1" is displayed as follows
+    Then Question "2" is displayed as follows
+    Then Question "3" is displayed as follows
+    Then Question "4" is displayed as follows
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # EligibilitySection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @Eligibility @Testj
+  Scenario Outline: Verify that user should able to access the Four questions in the Eligibility section # EligibilitySection.feature:38
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                              # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                        # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                         # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    Then Question "1" is displayed as follows                                                            # EligibilitySectionSteps.questionIsDisplayedAsFollows(int,String>)
+    Then Question "2" is displayed as follows                                                            # EligibilitySectionSteps.questionIsDisplayedAsFollows(int,String>)
+    Then Question "3" is displayed as follows                                                            # EligibilitySectionSteps.questionIsDisplayedAsFollows(int,String>)
+    Then Question "4" is displayed as follows                                                            # EligibilitySectionSteps.questionIsDisplayedAsFollows(int,String>)
+    And user should able to logged out successfully                                                      # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                    # CommonSteps.close_browser()
+
+  @AC-2
+  Scenario Outline: verifying the radio buttons Yes/No is displayed for each question and able to select Yes/No radio # EligibilitySection.feature:42
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    Then Question "1" has following radio buttons
+    Then Question "2" has following radio buttons
+    Then Question "3" has following radio buttons
+    Then Question "4" has following radio buttons
+    When user selects the radio button as "Yes" and verified for the question 1
+    When user selects the radio button as "No" and verified for the question 1
+    When user selects the radio button as "Yes" and verified for the question 2
+    When user selects the radio button as "No" and verified for the question 2
+    When user selects the radio button as "Yes" and verified for the question 3
+    When user selects the radio button as "No" and verified for the question 3
+    When user selects the radio button as "Yes" and verified for the question 4
+    When user selects the radio button as "No" and verified for the question 4
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # EligibilitySection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @AC-2 @Eligibility
+  Scenario Outline: verifying the radio buttons Yes/No is displayed for each question and able to select Yes/No radio # EligibilitySection.feature:71
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                           # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                     # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                      # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    Then Question "1" has following radio buttons                                                                     # EligibilitySectionSteps.question_is_following_radio_buttons(int,String>)
+    Then Question "2" has following radio buttons                                                                     # EligibilitySectionSteps.question_is_following_radio_buttons(int,String>)
+    Then Question "3" has following radio buttons                                                                     # EligibilitySectionSteps.question_is_following_radio_buttons(int,String>)
+    Then Question "4" has following radio buttons                                                                     # EligibilitySectionSteps.question_is_following_radio_buttons(int,String>)
+    When user selects the radio button as "Yes" and verified for the question 1                                       # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "No" and verified for the question 1                                        # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 2                                       # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "No" and verified for the question 2                                        # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 3                                       # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "No" and verified for the question 3                                        # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 4                                       # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "No" and verified for the question 4                                        # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    And user should able to logged out successfully                                                                   # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                                 # CommonSteps.close_browser()
+
+  @AC-3
+  Scenario Outline: verifying the warning message on selecting "No" radio button for any of the question # EligibilitySection.feature:74
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    When user selects the radio button as "No" and verified for the question 1
+    Then warning message "<WarningMessage>" is displayed for question 1
+    When user selects the radio button as "No" and verified for the question 2
+    Then warning message "<WarningMessage>" is displayed for question 2
+    When user selects the radio button as "No" and verified for the question 3
+    Then warning message "<WarningMessage>" is displayed for question 3
+    When user selects the radio button as "No" and verified for the question 4
+    Then warning message "<WarningMessage>" is displayed for question 4
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # EligibilitySection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @Eligibility @AC-3
+  Scenario Outline: verifying the warning message on selecting "No" radio button for any of the question                                          # EligibilitySection.feature:90
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                                                       # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                                                 # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                                                  # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user selects the radio button as "No" and verified for the question 1                                                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    Then warning message "Visit Smart Advisor on the SME Portal for more information on other government assistance." is displayed for question 1 # EligibilitySectionSteps.warning_message_is_displayed_for_question(String,int)
+    When user selects the radio button as "No" and verified for the question 2                                                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    Then warning message "Visit Smart Advisor on the SME Portal for more information on other government assistance." is displayed for question 2 # EligibilitySectionSteps.warning_message_is_displayed_for_question(String,int)
+    When user selects the radio button as "No" and verified for the question 3                                                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    Then warning message "Visit Smart Advisor on the SME Portal for more information on other government assistance." is displayed for question 3 # EligibilitySectionSteps.warning_message_is_displayed_for_question(String,int)
+    When user selects the radio button as "No" and verified for the question 4                                                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    Then warning message "Visit Smart Advisor on the SME Portal for more information on other government assistance." is displayed for question 4 # EligibilitySectionSteps.warning_message_is_displayed_for_question(String,int)
+    And user should able to logged out successfully                                                                                               # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                                                             # CommonSteps.close_browser()
+
+  @AC-4
+  Scenario Outline: verifying the warning message link is open in new tab                                                          # EligibilitySection.feature:94
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    When user selects the radio button as "No" and verified for the question 1
+    When user clicks on Smart Adviser Link
+    Then a website is launched in another window with url "https://www.smeportal.sg/content/smeportal/en/moneymatters.html#saText"
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # EligibilitySection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @Eligibility @AC-4
+  Scenario Outline: verifying the warning message link is open in new tab                                                          # EligibilitySection.feature:105
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                                        # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                                  # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                                   # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user selects the radio button as "No" and verified for the question 1                                                     # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user clicks on Smart Adviser Link                                                                                         # EligibilitySectionSteps.userClicksOnSmartAdviserLink()
+    Then a website is launched in another window with url "https://www.smeportal.sg/content/smeportal/en/moneymatters.html#saText" # EligibilitySectionSteps.websiteIsLaunchedInAnotherWindow(String)
+    And user should able to logged out successfully                                                                                # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                                              # CommonSteps.close_browser()
+
+  @AC-5
+  Scenario Outline: Verify that user should able to validate the saved values after refresh the page # EligibilitySection.feature:110
+    Given User login with own "<UserName>" "<UserFullName>" "<UserID>" "<UserRole>"
+    When user creates a new Grant
+    And user clicks on Proceed button in My Grant Actions screen
+    When user selects the radio button as "Yes" and verified for the question 1
+    When user selects the radio button as "Yes" and verified for the question 2
+    When user selects the radio button as "Yes" and verified for the question 3
+    When user selects the radio button as "No" and verified for the question 4
+    When user clicks on save button
+    And user refreshes the page
+    Then "Yes" radio is selected for question "1"
+    Then "Yes" radio is selected for question "2"
+    Then "Yes" radio is selected for question "3"
+    Then "No" radio is selected for question "4"
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # EligibilitySection.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @Eligibility @AC-5
+  Scenario Outline: Verify that user should able to validate the saved values after refresh the page # EligibilitySection.feature:128
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                          # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                    # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                     # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user selects the radio button as "Yes" and verified for the question 1                      # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 2                      # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 3                      # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "No" and verified for the question 4                       # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user clicks on save button                                                                  # EligibilitySectionSteps.user_clicks_on_save_button()
+    And user refreshes the page                                                                      # EligibilitySectionSteps.user_refreshes_the_page()
+    Then "Yes" radio is selected for question "1"                                                    # EligibilitySectionSteps.radio_is_selected_for_question(String,String)
+    Then "Yes" radio is selected for question "2"                                                    # EligibilitySectionSteps.radio_is_selected_for_question(String,String)
+    Then "Yes" radio is selected for question "3"                                                    # EligibilitySectionSteps.radio_is_selected_for_question(String,String)
+    Then "No" radio is selected for question "4"                                                     # EligibilitySectionSteps.radio_is_selected_for_question(String,String)
+    And user should able to logged out successfully                                                  # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                # CommonSteps.close_browser()
+@Form_Submission
+Feature: Form Submission Section
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                                                                                                      # FormSubmission.feature:5
+    Given Launching the browser                                                                                    # CommonSteps.launching_the_browser()
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                        # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                  # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                   # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user selects the radio button as "Yes" and verified for the question 1                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 2                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 3                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 4                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Contact Details" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                     # ContactDetailsSteps.user_verifies_the_text(String)
+    When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com" # ContactDetailsSteps.user_should_able_to_enter_the_values_in_the_field(String,String,String,String)
+    When user clicks on checkbox for the field Same as registered address in Company Profile                       # ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile()
+    And user clicks for the field of same as main contact person                                                   # ContactDetailsSteps.user_clicks_for_the_field_of_same_as_main_contact_person()
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Proposal" screen                                                                       # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "SUBMIT YOUR PROPOSAL"                                                             # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next in proposal screen                                             # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next(String>)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Business Impact" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Business Impact screen                               # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Business_Impact_screen(String>)
+    Then user verifies the text "PROVIDE DETAILS OF COSTS"                                                         # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Cost screen                                          # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Cost_screen(String>)
+    Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+
+  @FS_AC1
+  Scenario: Verify that user should able to enter all the mandatory fields and navigate to read only summary page # FormSubmission.feature:39
+    When user enter mandatory fields and click review button in Declare and Acknowledge screen                    # FormSubmissionSteps.user_enter_mandatory_fields_and_click_review_button_in_Declare_and_Acknowledge_screen()
+    Then user should verifies the text "Review Your Application" in read only summary page                        # FormSubmissionSteps.user_should_verifies_the_text_in_read_only_summary_page(String)
+    And user should able to logged out successfully                                                               # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                             # CommonSteps.close_browser()
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                                                                                                      # FormSubmission.feature:5
+    Given Launching the browser                                                                                    # CommonSteps.launching_the_browser()
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                        # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                  # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                   # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user selects the radio button as "Yes" and verified for the question 1                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 2                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 3                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 4                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Contact Details" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                     # ContactDetailsSteps.user_verifies_the_text(String)
+    When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com" # ContactDetailsSteps.user_should_able_to_enter_the_values_in_the_field(String,String,String,String)
+    When user clicks on checkbox for the field Same as registered address in Company Profile                       # ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile()
+      org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" id="react-contact_info-correspondence_address-copied" value="on"> is not clickable at point (481, 751). Other element would receive the click: <label class="control-label bgp-label">...</label>
+        (Session info: chrome=77.0.3865.90)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'DESKTOP-1SK9A0Q', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Jeevan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+      Session ID: 72977efa36d383e8dcf17ae6f7074786
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+      	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+      	at com.palo.techtest.StepLibrary.CommonLibrary.isElementPresentVerifyClick(CommonLibrary.java:227)
+      	at com.palo.techtest.StepLibrary.ContactDetailsLibrary.clickOnCheckBox(ContactDetailsLibrary.java:67)
+      	at com.palo.techtest.StepDefinition.ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile(ContactDetailsSteps.java:29)
+      	at ✽.When user clicks on checkbox for the field Same as registered address in Company Profile(FormSubmission.feature:18)
+
+    And user clicks for the field of same as main contact person                                                   # ContactDetailsSteps.user_clicks_for_the_field_of_same_as_main_contact_person()
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Proposal" screen                                                                       # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "SUBMIT YOUR PROPOSAL"                                                             # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next in proposal screen                                             # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next(String>)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Business Impact" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Business Impact screen                               # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Business_Impact_screen(String>)
+    Then user verifies the text "PROVIDE DETAILS OF COSTS"                                                         # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Cost screen                                          # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Cost_screen(String>)
+    Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+
+  @FS_AC2
+  Scenario: Verify that user should able to enter all the mandatory fields and navigate to read only summary page # FormSubmission.feature:49
+    Then user should verify the error message "Select an option" for the missing field                            # FormSubmissionSteps.user_should_verify_the_error_message_for_the_missing_field(String)
+    And user should able to logged out successfully                                                               # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                             # CommonSteps.close_browser()
+
+  @FS_AC3
+  Scenario Outline: User should verifies read-only summary page should correctly contain all the details previously filled in each form section. # FormSubmission.feature:57
+    When user enter mandatory fields and click review button in Declare and Acknowledge screen
+    When user navigates to "Eligibility" screen
+    Then user should verifies the submitted data in Eligibility section
+    When user navigates to "Contact Details" screen
+    And user should verifies the submitted data in Contact Details section "<Name>" "<Job_Title>" "<Contact_NO>" "<Email>"
+    When user navigates to "Proposal" screen
+    Then user should verifies the submitted data in Proposal screen
+    When user navigates to "Business Impact" screen
+    Then user should verifies the submitted data in Business Impact screen
+    When user navigates to "Cost" screen
+    Then user should verifies the submitted data in Costs screen
+    When user navigates to "Declare & Review" screen
+    And user should verifies the submitted data in Declare and review screen
+    And user should able to logged out successfully
+    And close browser
+
+    Examples: 
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                                                                                                      # FormSubmission.feature:5
+    Given Launching the browser                                                                                    # CommonSteps.launching_the_browser()
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                        # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                  # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                   # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user selects the radio button as "Yes" and verified for the question 1                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 2                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 3                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 4                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Contact Details" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                     # ContactDetailsSteps.user_verifies_the_text(String)
+    When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com" # ContactDetailsSteps.user_should_able_to_enter_the_values_in_the_field(String,String,String,String)
+    When user clicks on checkbox for the field Same as registered address in Company Profile                       # ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile()
+    And user clicks for the field of same as main contact person                                                   # ContactDetailsSteps.user_clicks_for_the_field_of_same_as_main_contact_person()
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Proposal" screen                                                                       # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "SUBMIT YOUR PROPOSAL"                                                             # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next in proposal screen                                             # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next(String>)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Business Impact" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Business Impact screen                               # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Business_Impact_screen(String>)
+    Then user verifies the text "PROVIDE DETAILS OF COSTS"                                                         # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Cost screen                                          # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Cost_screen(String>)
+    Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+
+  @FS_AC3 @Form_Submission
+  Scenario Outline: User should verifies read-only summary page should correctly contain all the details previously filled in each form section. # FormSubmission.feature:82
+    When user enter mandatory fields and click review button in Declare and Acknowledge screen                                                   # FormSubmissionSteps.user_enter_mandatory_fields_and_click_review_button_in_Declare_and_Acknowledge_screen()
+    When user navigates to "Eligibility" screen                                                                                                  # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user should verifies the submitted data in Eligibility section                                                                          # FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Eligibility_section(String>)
+    When user navigates to "Contact Details" screen                                                                                              # ContactDetailsSteps.user_navigates_to_screen(String)
+    And user should verifies the submitted data in Contact Details section "GovTech" "Software Developer" "65656565" "test@co.com"               # FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Contact_Details_section(String,String,String,String)
+    When user navigates to "Proposal" screen                                                                                                     # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user should verifies the submitted data in Proposal screen                                                                              # FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Proposal_screen(String>)
+    When user navigates to "Business Impact" screen                                                                                              # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user should verifies the submitted data in Business Impact screen                                                                       # FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Business_Impact_screen(String>)
+    When user navigates to "Cost" screen                                                                                                         # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user should verifies the submitted data in Costs screen                                                                                 # FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Costs_screen(String>)
+    When user navigates to "Declare & Review" screen                                                                                             # ContactDetailsSteps.user_navigates_to_screen(String)
+    And user should verifies the submitted data in Declare and review screen                                                                     # FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Declare_and_review_screen(String>)
+    And user should able to logged out successfully                                                                                              # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                                                            # CommonSteps.close_browser()
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                                                                                                      # FormSubmission.feature:5
+    Given Launching the browser                                                                                    # CommonSteps.launching_the_browser()
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                        # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                  # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                   # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user selects the radio button as "Yes" and verified for the question 1                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 2                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 3                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 4                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Contact Details" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                     # ContactDetailsSteps.user_verifies_the_text(String)
+    When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com" # ContactDetailsSteps.user_should_able_to_enter_the_values_in_the_field(String,String,String,String)
+    When user clicks on checkbox for the field Same as registered address in Company Profile                       # ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile()
+    And user clicks for the field of same as main contact person                                                   # ContactDetailsSteps.user_clicks_for_the_field_of_same_as_main_contact_person()
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Proposal" screen                                                                       # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "SUBMIT YOUR PROPOSAL"                                                             # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next in proposal screen                                             # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next(String>)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Business Impact" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Business Impact screen                               # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Business_Impact_screen(String>)
+    Then user verifies the text "PROVIDE DETAILS OF COSTS"                                                         # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Cost screen                                          # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Cost_screen(String>)
+    Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+
+  @FS_AC4
+  Scenario: Verify that user should able to enter all the mandatory fields and navigate to read only summary page # FormSubmission.feature:86
+    When user enter mandatory fields and click review button in Declare and Acknowledge screen                    # FormSubmissionSteps.user_enter_mandatory_fields_and_click_review_button_in_Declare_and_Acknowledge_screen()
+    And user navigates to "Declare & Review" screen                                                               # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user should verifies the submitted data in Declare and review screen                                     # FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Declare_and_review_screen(String>)
+    And user should able to logged out successfully                                                               # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                             # CommonSteps.close_browser()
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                                                                                                      # FormSubmission.feature:5
+    Given Launching the browser                                                                                    # CommonSteps.launching_the_browser()
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                        # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                  # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                   # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user selects the radio button as "Yes" and verified for the question 1                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 2                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 3                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 4                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Contact Details" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                     # ContactDetailsSteps.user_verifies_the_text(String)
+    When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com" # ContactDetailsSteps.user_should_able_to_enter_the_values_in_the_field(String,String,String,String)
+    When user clicks on checkbox for the field Same as registered address in Company Profile                       # ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile()
+    And user clicks for the field of same as main contact person                                                   # ContactDetailsSteps.user_clicks_for_the_field_of_same_as_main_contact_person()
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Proposal" screen                                                                       # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "SUBMIT YOUR PROPOSAL"                                                             # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next in proposal screen                                             # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next(String>)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Business Impact" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Business Impact screen                               # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Business_Impact_screen(String>)
+    Then user verifies the text "PROVIDE DETAILS OF COSTS"                                                         # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Cost screen                                          # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Cost_screen(String>)
+    Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+
+  @FS_AC5
+  Scenario: Verify that user should able to submit the application successfully                # FormSubmission.feature:97
+    When user enter mandatory fields and click review button in Declare and Acknowledge screen # FormSubmissionSteps.user_enter_mandatory_fields_and_click_review_button_in_Declare_and_Acknowledge_screen()
+    And user navigates to "Declare & Review" screen                                            # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user should verifies the submitted data in Declare and review screen                  # FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Declare_and_review_screen(String>)
+      org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+        (Session info: chrome=77.0.3865.90)
+      For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'DESKTOP-1SK9A0Q', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Jeevan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54048}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+      Session ID: 0fd6f411239755a4880ed343c4a6c15f
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+      	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+      	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+      	at com.palo.techtest.StepLibrary.CommonLibrary.getElementText(CommonLibrary.java:105)
+      	at com.palo.techtest.StepLibrary.FormSubmissionLibrary.validDeclareAndReviewValues(FormSubmissionLibrary.java:154)
+      	at com.palo.techtest.StepDefinition.FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Declare_and_review_screen(FormSubmissionSteps.java:61)
+      	at ✽.Then user should verifies the submitted data in Declare and review screen(FormSubmission.feature:100)
+
+    And user should able to submit My Grant Application                                        # FormSubmissionSteps.user_should_able_to_submit_My_Grant_Application()
+    Then user should verify the success message contain "Ref ID:" and "Enterprise Singapore"   # FormSubmissionSteps.user_should_verify_the_success_message_contain_and(String,String)
+    And user should able to logged out successfully                                            # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                          # CommonSteps.close_browser()
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                                                                                                      # FormSubmission.feature:5
+    Given Launching the browser                                                                                    # CommonSteps.launching_the_browser()
+    Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor"                                        # EligibilitySectionSteps.User_login_with_own(String,String,String,String)
+    When user creates a new Grant                                                                                  # EligibilitySectionSteps.user_creates_a_new_Grant()
+    And user clicks on Proceed button in My Grant Actions screen                                                   # EligibilitySectionSteps.user_clicks_on_Proceed_button_in_My_Grant_Actions_screen()
+    When user selects the radio button as "Yes" and verified for the question 1                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 2                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 3                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user selects the radio button as "Yes" and verified for the question 4                                    # EligibilitySectionSteps.user_selects_the_radio_button_as_and_verified_for_the_question(String,int)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Contact Details" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"                                                     # ContactDetailsSteps.user_verifies_the_text(String)
+    When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com" # ContactDetailsSteps.user_should_able_to_enter_the_values_in_the_field(String,String,String,String)
+    When user clicks on checkbox for the field Same as registered address in Company Profile                       # ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile()
+    And user clicks for the field of same as main contact person                                                   # ContactDetailsSteps.user_clicks_for_the_field_of_same_as_main_contact_person()
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Proposal" screen                                                                       # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "SUBMIT YOUR PROPOSAL"                                                             # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next in proposal screen                                             # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next(String>)
+    When user clicks on save button                                                                                # EligibilitySectionSteps.user_clicks_on_save_button()
+    When user navigates to "Business Impact" screen                                                                # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Business Impact screen                               # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Business_Impact_screen(String>)
+    Then user verifies the text "PROVIDE DETAILS OF COSTS"                                                         # ContactDetailsSteps.user_verifies_the_text(String)
+    When user enter mandatory fields and click next button in Cost screen                                          # FormSubmissionSteps.user_enter_mandatory_fields_and_click_next_button_in_Cost_screen(String>)
+    Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"                                                      # ContactDetailsSteps.user_verifies_the_text(String)
+
+  @FS_AC6
+  Scenario: Verify that user should able to see the submitted application is displayed under processing tab # FormSubmission.feature:111
+    When user enter mandatory fields and click review button in Declare and Acknowledge screen              # FormSubmissionSteps.user_enter_mandatory_fields_and_click_review_button_in_Declare_and_Acknowledge_screen()
+    And user navigates to "Declare & Review" screen                                                         # ContactDetailsSteps.user_navigates_to_screen(String)
+    Then user should verifies the submitted data in Declare and review screen                               # FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Declare_and_review_screen(String>)
+    And user should able to submit My Grant Application                                                     # FormSubmissionSteps.user_should_able_to_submit_My_Grant_Application()
+    Then user should verify the success message contain "Ref ID:" and "Enterprise Singapore"                # FormSubmissionSteps.user_should_verify_the_success_message_contain_and(String,String)
+    When user clicks on "My Grants" in Main menu and verifies the submitted application is displayed        # FormSubmissionSteps.user_clicks_on_in_Main_menu(String)
+    And user should able to logged out successfully                                                         # FormSubmissionSteps.user_should_able_to_logged_out_successfully()
+    And close browser                                                                                       # CommonSteps.close_browser()

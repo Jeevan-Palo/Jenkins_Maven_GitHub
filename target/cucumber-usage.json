@@ -1,0 +1,2031 @@
+[
+  {
+    "source": "^user should verifies the submitted data in Declare and review screen$",
+    "steps": [
+      {
+        "name": "user should verifies the submitted data in Declare and review screen",
+        "aggregatedDurations": {
+          "average": 1.851668533,
+          "median": 1.9101576
+        },
+        "durations": [
+          {
+            "duration": 1.9101576,
+            "location": "FormSubmission.feature:74"
+          },
+          {
+            "duration": 2.0367101,
+            "location": "FormSubmission.feature:89"
+          },
+          {
+            "duration": 1.6081379,
+            "location": "FormSubmission.feature:114"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user verifies Blk/Hse No \"([^\"]*)\" and Street \"([^\"]*)\" should autopopulate$",
+    "steps": [
+      {
+        "name": "user verifies Blk/Hse No \"96\" and Street \"BEDOK NORTH AVENUE 4\" should autopopulate",
+        "aggregatedDurations": {
+          "average": 2.1358933,
+          "median": 2.1358933
+        },
+        "durations": [
+          {
+            "duration": 2.1358933,
+            "location": "ContactDetailSection.feature:31"
+          }
+        ]
+      },
+      {
+        "name": "user verifies Blk/Hse No \"45\" and Street \"CHOA CHU KANG CENTRAL\" should autopopulate",
+        "aggregatedDurations": {
+          "average": 2.142407301,
+          "median": 2.142407301
+        },
+        "durations": [
+          {
+            "duration": 2.142407301,
+            "location": "ContactDetailSection.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks on save button$",
+    "steps": [
+      {
+        "name": "user clicks on save button",
+        "aggregatedDurations": {
+          "average": 0.14205725,
+          "median": 0.14957875
+        },
+        "durations": [
+          {
+            "duration": 0.239360399,
+            "location": "ContactDetailSection.feature:101"
+          },
+          {
+            "duration": 0.156864801,
+            "location": "EligibilitySection.feature:118"
+          },
+          {
+            "duration": 0.233982,
+            "location": "FormSubmission.feature:14"
+          },
+          {
+            "duration": 0.0941781,
+            "location": "FormSubmission.feature:20"
+          },
+          {
+            "duration": 0.130377101,
+            "location": "FormSubmission.feature:25"
+          },
+          {
+            "duration": 0.1582611,
+            "location": "FormSubmission.feature:14"
+          },
+          {
+            "duration": 0.0765493,
+            "location": "FormSubmission.feature:14"
+          },
+          {
+            "duration": 0.1691746,
+            "location": "FormSubmission.feature:20"
+          },
+          {
+            "duration": 0.1479718,
+            "location": "FormSubmission.feature:25"
+          },
+          {
+            "duration": 0.1048119,
+            "location": "FormSubmission.feature:14"
+          },
+          {
+            "duration": 0.1511857,
+            "location": "FormSubmission.feature:20"
+          },
+          {
+            "duration": 0.171142201,
+            "location": "FormSubmission.feature:25"
+          },
+          {
+            "duration": 0.250946,
+            "location": "FormSubmission.feature:14"
+          },
+          {
+            "duration": 0.176749001,
+            "location": "FormSubmission.feature:20"
+          },
+          {
+            "duration": 0.0824655,
+            "location": "FormSubmission.feature:25"
+          },
+          {
+            "duration": 0.063425399,
+            "location": "FormSubmission.feature:14"
+          },
+          {
+            "duration": 0.0724372,
+            "location": "FormSubmission.feature:20"
+          },
+          {
+            "duration": 0.0771484,
+            "location": "FormSubmission.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verifies the submitted data in Eligibility section$",
+    "steps": [
+      {
+        "name": "user should verifies the submitted data in Eligibility section",
+        "aggregatedDurations": {
+          "average": 0.176484899,
+          "median": 0.176484899
+        },
+        "durations": [
+          {
+            "duration": 0.176484899,
+            "location": "FormSubmission.feature:60"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks on \"([^\"]*)\" in Main menu and verifies the submitted application is displayed$",
+    "steps": [
+      {
+        "name": "user clicks on \"My Grants\" in Main menu and verifies the submitted application is displayed",
+        "aggregatedDurations": {
+          "average": 10.907908,
+          "median": 10.907908
+        },
+        "durations": [
+          {
+            "duration": 10.907908,
+            "location": "FormSubmission.feature:118"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user selects the radio button as \"([^\"]*)\" and verified for the question (\\d+)$",
+    "steps": [
+      {
+        "name": "user selects the radio button as \"Yes\" and verified for the question 1",
+        "aggregatedDurations": {
+          "average": 2.298813325,
+          "median": 2.3245787
+        },
+        "durations": [
+          {
+            "duration": 2.3523995,
+            "location": "EligibilitySection.feature:58"
+          },
+          {
+            "duration": 2.3516919,
+            "location": "EligibilitySection.feature:114"
+          },
+          {
+            "duration": 2.3984414,
+            "location": "FormSubmission.feature:10"
+          },
+          {
+            "duration": 2.1839508,
+            "location": "FormSubmission.feature:10"
+          },
+          {
+            "duration": 2.2792644,
+            "location": "FormSubmission.feature:10"
+          },
+          {
+            "duration": 2.2974655,
+            "location": "FormSubmission.feature:10"
+          },
+          {
+            "duration": 2.373212501,
+            "location": "FormSubmission.feature:10"
+          },
+          {
+            "duration": 2.154080599,
+            "location": "FormSubmission.feature:10"
+          }
+        ]
+      },
+      {
+        "name": "user selects the radio button as \"No\" and verified for the question 1",
+        "aggregatedDurations": {
+          "average": 2.3351873,
+          "median": 2.326976
+        },
+        "durations": [
+          {
+            "duration": 2.326976,
+            "location": "EligibilitySection.feature:59"
+          },
+          {
+            "duration": 2.3950174,
+            "location": "EligibilitySection.feature:78"
+          },
+          {
+            "duration": 2.283568501,
+            "location": "EligibilitySection.feature:98"
+          }
+        ]
+      },
+      {
+        "name": "user selects the radio button as \"Yes\" and verified for the question 2",
+        "aggregatedDurations": {
+          "average": 2.262087224,
+          "median": 2.266387799
+        },
+        "durations": [
+          {
+            "duration": 2.2805167,
+            "location": "EligibilitySection.feature:60"
+          },
+          {
+            "duration": 2.2794525,
+            "location": "EligibilitySection.feature:115"
+          },
+          {
+            "duration": 2.3022867,
+            "location": "FormSubmission.feature:11"
+          },
+          {
+            "duration": 2.253323099,
+            "location": "FormSubmission.feature:11"
+          },
+          {
+            "duration": 2.223506,
+            "location": "FormSubmission.feature:11"
+          },
+          {
+            "duration": 2.3657302,
+            "location": "FormSubmission.feature:11"
+          },
+          {
+            "duration": 2.2462249,
+            "location": "FormSubmission.feature:11"
+          },
+          {
+            "duration": 2.1456577,
+            "location": "FormSubmission.feature:11"
+          }
+        ]
+      },
+      {
+        "name": "user selects the radio button as \"No\" and verified for the question 2",
+        "aggregatedDurations": {
+          "average": 2.3622525,
+          "median": 2.3622525
+        },
+        "durations": [
+          {
+            "duration": 2.3520818,
+            "location": "EligibilitySection.feature:61"
+          },
+          {
+            "duration": 2.372423201,
+            "location": "EligibilitySection.feature:80"
+          }
+        ]
+      },
+      {
+        "name": "user selects the radio button as \"Yes\" and verified for the question 3",
+        "aggregatedDurations": {
+          "average": 2.327086724,
+          "median": 2.355612799
+        },
+        "durations": [
+          {
+            "duration": 2.3586142,
+            "location": "EligibilitySection.feature:62"
+          },
+          {
+            "duration": 2.321675701,
+            "location": "EligibilitySection.feature:116"
+          },
+          {
+            "duration": 2.3626748,
+            "location": "FormSubmission.feature:12"
+          },
+          {
+            "duration": 2.340374899,
+            "location": "FormSubmission.feature:12"
+          },
+          {
+            "duration": 2.356867899,
+            "location": "FormSubmission.feature:12"
+          },
+          {
+            "duration": 2.372568,
+            "location": "FormSubmission.feature:12"
+          },
+          {
+            "duration": 2.354357699,
+            "location": "FormSubmission.feature:12"
+          },
+          {
+            "duration": 2.1495606,
+            "location": "FormSubmission.feature:12"
+          }
+        ]
+      },
+      {
+        "name": "user selects the radio button as \"No\" and verified for the question 3",
+        "aggregatedDurations": {
+          "average": 2.31826005,
+          "median": 2.31826005
+        },
+        "durations": [
+          {
+            "duration": 2.36253,
+            "location": "EligibilitySection.feature:63"
+          },
+          {
+            "duration": 2.2739901,
+            "location": "EligibilitySection.feature:82"
+          }
+        ]
+      },
+      {
+        "name": "user selects the radio button as \"Yes\" and verified for the question 4",
+        "aggregatedDurations": {
+          "average": 2.322768571,
+          "median": 2.359838699
+        },
+        "durations": [
+          {
+            "duration": 2.2662909,
+            "location": "EligibilitySection.feature:64"
+          },
+          {
+            "duration": 2.3917524,
+            "location": "FormSubmission.feature:13"
+          },
+          {
+            "duration": 2.3469328,
+            "location": "FormSubmission.feature:13"
+          },
+          {
+            "duration": 2.359838699,
+            "location": "FormSubmission.feature:13"
+          },
+          {
+            "duration": 2.3656932,
+            "location": "FormSubmission.feature:13"
+          },
+          {
+            "duration": 2.3788394,
+            "location": "FormSubmission.feature:13"
+          },
+          {
+            "duration": 2.150032601,
+            "location": "FormSubmission.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "user selects the radio button as \"No\" and verified for the question 4",
+        "aggregatedDurations": {
+          "average": 2.3284723,
+          "median": 2.3292328
+        },
+        "durations": [
+          {
+            "duration": 2.3339133,
+            "location": "EligibilitySection.feature:65"
+          },
+          {
+            "duration": 2.3292328,
+            "location": "EligibilitySection.feature:84"
+          },
+          {
+            "duration": 2.322270801,
+            "location": "EligibilitySection.feature:117"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^warning message \"([^\"]*)\" is displayed for question (\\d+)$",
+    "steps": [
+      {
+        "name": "warning message \"Visit Smart Advisor on the SME Portal for more information on other government assistance.\" is displayed for question 1",
+        "aggregatedDurations": {
+          "average": 0.604409,
+          "median": 0.604409
+        },
+        "durations": [
+          {
+            "duration": 0.604409,
+            "location": "EligibilitySection.feature:79"
+          }
+        ]
+      },
+      {
+        "name": "warning message \"Visit Smart Advisor on the SME Portal for more information on other government assistance.\" is displayed for question 2",
+        "aggregatedDurations": {
+          "average": 0.6225279,
+          "median": 0.6225279
+        },
+        "durations": [
+          {
+            "duration": 0.6225279,
+            "location": "EligibilitySection.feature:81"
+          }
+        ]
+      },
+      {
+        "name": "warning message \"Visit Smart Advisor on the SME Portal for more information on other government assistance.\" is displayed for question 3",
+        "aggregatedDurations": {
+          "average": 0.569915401,
+          "median": 0.569915401
+        },
+        "durations": [
+          {
+            "duration": 0.569915401,
+            "location": "EligibilitySection.feature:83"
+          }
+        ]
+      },
+      {
+        "name": "warning message \"Visit Smart Advisor on the SME Portal for more information on other government assistance.\" is displayed for question 4",
+        "aggregatedDurations": {
+          "average": 0.6339159,
+          "median": 0.6339159
+        },
+        "durations": [
+          {
+            "duration": 0.6339159,
+            "location": "EligibilitySection.feature:85"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verifies the submitted data in Costs screen$",
+    "steps": [
+      {
+        "name": "user should verifies the submitted data in Costs screen",
+        "aggregatedDurations": {
+          "average": 0.388986901,
+          "median": 0.388986901
+        },
+        "durations": [
+          {
+            "duration": 0.388986901,
+            "location": "FormSubmission.feature:71"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^\"([^\"]*)\" radio is selected for question \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "\"Yes\" radio is selected for question \"1\"",
+        "aggregatedDurations": {
+          "average": 0.0717687,
+          "median": 0.0717687
+        },
+        "durations": [
+          {
+            "duration": 0.0717687,
+            "location": "EligibilitySection.feature:120"
+          }
+        ]
+      },
+      {
+        "name": "\"Yes\" radio is selected for question \"2\"",
+        "aggregatedDurations": {
+          "average": 0.0692308,
+          "median": 0.0692308
+        },
+        "durations": [
+          {
+            "duration": 0.0692308,
+            "location": "EligibilitySection.feature:121"
+          }
+        ]
+      },
+      {
+        "name": "\"Yes\" radio is selected for question \"3\"",
+        "aggregatedDurations": {
+          "average": 0.0677433,
+          "median": 0.0677433
+        },
+        "durations": [
+          {
+            "duration": 0.0677433,
+            "location": "EligibilitySection.feature:122"
+          }
+        ]
+      },
+      {
+        "name": "\"No\" radio is selected for question \"4\"",
+        "aggregatedDurations": {
+          "average": 0.0712435,
+          "median": 0.0712435
+        },
+        "durations": [
+          {
+            "duration": 0.0712435,
+            "location": "EligibilitySection.feature:123"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user creates a new Grant$",
+    "steps": [
+      {
+        "name": "user creates a new Grant",
+        "aggregatedDurations": {
+          "average": 11.537926011,
+          "median": 11.5867085
+        },
+        "durations": [
+          {
+            "duration": 11.5951102,
+            "location": "ContactDetailSection.feature:11"
+          },
+          {
+            "duration": 11.5867085,
+            "location": "ContactDetailSection.feature:26"
+          },
+          {
+            "duration": 11.2880044,
+            "location": "ContactDetailSection.feature:42"
+          },
+          {
+            "duration": 11.986643301,
+            "location": "ContactDetailSection.feature:59"
+          },
+          {
+            "duration": 11.108581,
+            "location": "ContactDetailSection.feature:76"
+          },
+          {
+            "duration": 11.2186781,
+            "location": "ContactDetailSection.feature:94"
+          },
+          {
+            "duration": 11.5076888,
+            "location": "EligibilitySection.feature:11"
+          },
+          {
+            "duration": 11.7523688,
+            "location": "EligibilitySection.feature:44"
+          },
+          {
+            "duration": 11.8138381,
+            "location": "EligibilitySection.feature:76"
+          },
+          {
+            "duration": 11.115295299,
+            "location": "EligibilitySection.feature:96"
+          },
+          {
+            "duration": 11.68858,
+            "location": "EligibilitySection.feature:112"
+          },
+          {
+            "duration": 12.0014632,
+            "location": "FormSubmission.feature:8"
+          },
+          {
+            "duration": 11.5340567,
+            "location": "FormSubmission.feature:8"
+          },
+          {
+            "duration": 11.721516799,
+            "location": "FormSubmission.feature:8"
+          },
+          {
+            "duration": 12.053867999,
+            "location": "FormSubmission.feature:8"
+          },
+          {
+            "duration": 11.4859974,
+            "location": "FormSubmission.feature:8"
+          },
+          {
+            "duration": 10.686343599,
+            "location": "FormSubmission.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should able to submit My Grant Application$",
+    "steps": [
+      {
+        "name": "user should able to submit My Grant Application",
+        "aggregatedDurations": {
+          "average": 0.121624,
+          "median": 0.121624
+        },
+        "durations": [
+          {
+            "duration": 0.121624,
+            "location": "FormSubmission.feature:116"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verfies the following fields Name, Job Title, Email$",
+    "steps": [
+      {
+        "name": "user should verfies the following fields Name, Job Title, Email",
+        "aggregatedDurations": {
+          "average": 3.1491155,
+          "median": 3.1491155
+        },
+        "durations": [
+          {
+            "duration": 3.1491155,
+            "location": "ContactDetailSection.feature:63"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verify the success message contain \"([^\"]*)\" and \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user should verify the success message contain \"Ref ID:\" and \"Enterprise Singapore\"",
+        "aggregatedDurations": {
+          "average": 2.1482301,
+          "median": 2.1482301
+        },
+        "durations": [
+          {
+            "duration": 2.1482301,
+            "location": "FormSubmission.feature:117"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user enter mandatory fields and click next in proposal screen$",
+    "steps": [
+      {
+        "name": "user enter mandatory fields and click next in proposal screen",
+        "aggregatedDurations": {
+          "average": 11.422071759,
+          "median": 11.6687047
+        },
+        "durations": [
+          {
+            "duration": 11.802897899,
+            "location": "FormSubmission.feature:23"
+          },
+          {
+            "duration": 11.4675424,
+            "location": "FormSubmission.feature:23"
+          },
+          {
+            "duration": 11.841826999,
+            "location": "FormSubmission.feature:23"
+          },
+          {
+            "duration": 11.6687047,
+            "location": "FormSubmission.feature:23"
+          },
+          {
+            "duration": 10.3293868,
+            "location": "FormSubmission.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^close browser$",
+    "steps": [
+      {
+        "name": "close browser",
+        "aggregatedDurations": {
+          "average": 13.942115153,
+          "median": 13.9373844
+        },
+        "durations": [
+          {
+            "duration": 13.980348901,
+            "location": "ContactDetailSection.feature:17"
+          },
+          {
+            "duration": 13.942247401,
+            "location": "ContactDetailSection.feature:33"
+          },
+          {
+            "duration": 14.0111238,
+            "location": "ContactDetailSection.feature:50"
+          },
+          {
+            "duration": 13.918547501,
+            "location": "ContactDetailSection.feature:65"
+          },
+          {
+            "duration": 13.9241328,
+            "location": "ContactDetailSection.feature:84"
+          },
+          {
+            "duration": 13.949035201,
+            "location": "ContactDetailSection.feature:105"
+          },
+          {
+            "duration": 14.0440754,
+            "location": "EligibilitySection.feature:35"
+          },
+          {
+            "duration": 13.9637114,
+            "location": "EligibilitySection.feature:67"
+          },
+          {
+            "duration": 13.9357118,
+            "location": "EligibilitySection.feature:87"
+          },
+          {
+            "duration": 13.9147537,
+            "location": "EligibilitySection.feature:102"
+          },
+          {
+            "duration": 13.9307874,
+            "location": "EligibilitySection.feature:125"
+          },
+          {
+            "duration": 13.9373844,
+            "location": "FormSubmission.feature:43"
+          },
+          {
+            "duration": 13.9380161,
+            "location": "FormSubmission.feature:77"
+          },
+          {
+            "duration": 13.917514399,
+            "location": "FormSubmission.feature:92"
+          },
+          {
+            "duration": 13.8243371,
+            "location": "FormSubmission.feature:120"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user enter mandatory fields and click next button in Cost screen$",
+    "steps": [
+      {
+        "name": "user enter mandatory fields and click next button in Cost screen",
+        "aggregatedDurations": {
+          "average": 8.09829096,
+          "median": 8.3063461
+        },
+        "durations": [
+          {
+            "duration": 8.5067389,
+            "location": "FormSubmission.feature:31"
+          },
+          {
+            "duration": 8.0594944,
+            "location": "FormSubmission.feature:31"
+          },
+          {
+            "duration": 8.3063461,
+            "location": "FormSubmission.feature:31"
+          },
+          {
+            "duration": 8.3170186,
+            "location": "FormSubmission.feature:31"
+          },
+          {
+            "duration": 7.3018568,
+            "location": "FormSubmission.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should able to enter the postal code \"([^\"]*)\"in mailing address$",
+    "steps": [
+      {
+        "name": "user should able to enter the postal code \"460096\"in mailing address",
+        "aggregatedDurations": {
+          "average": 2.466071499,
+          "median": 2.466071499
+        },
+        "durations": [
+          {
+            "duration": 2.466071499,
+            "location": "ContactDetailSection.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks on checkbox for the field Same as registered address in Company Profile$",
+    "steps": [
+      {
+        "name": "user clicks on checkbox for the field Same as registered address in Company Profile",
+        "aggregatedDurations": {
+          "average": 0.180940433,
+          "median": 0.19082055
+        },
+        "durations": [
+          {
+            "duration": 0.211506401,
+            "location": "ContactDetailSection.feature:46"
+          },
+          {
+            "duration": 0.1349063,
+            "location": "FormSubmission.feature:18"
+          },
+          {
+            "duration": 0.253895301,
+            "location": "FormSubmission.feature:18"
+          },
+          {
+            "duration": 0.1810636,
+            "location": "FormSubmission.feature:18"
+          },
+          {
+            "duration": 0.2005775,
+            "location": "FormSubmission.feature:18"
+          },
+          {
+            "duration": 0.1036935,
+            "location": "FormSubmission.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Question \"([^\"]*)\" is displayed as follows$",
+    "steps": [
+      {
+        "name": "Question \"1\" is displayed as follows",
+        "aggregatedDurations": {
+          "average": 1.103589499,
+          "median": 1.103589499
+        },
+        "durations": [
+          {
+            "duration": 1.103589499,
+            "location": "EligibilitySection.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "Question \"2\" is displayed as follows",
+        "aggregatedDurations": {
+          "average": 0.109826699,
+          "median": 0.109826699
+        },
+        "durations": [
+          {
+            "duration": 0.109826699,
+            "location": "EligibilitySection.feature:17"
+          }
+        ]
+      },
+      {
+        "name": "Question \"3\" is displayed as follows",
+        "aggregatedDurations": {
+          "average": 0.068726199,
+          "median": 0.068726199
+        },
+        "durations": [
+          {
+            "duration": 0.068726199,
+            "location": "EligibilitySection.feature:22"
+          }
+        ]
+      },
+      {
+        "name": "Question \"4\" is displayed as follows",
+        "aggregatedDurations": {
+          "average": 0.0749954,
+          "median": 0.0749954
+        },
+        "durations": [
+          {
+            "duration": 0.0749954,
+            "location": "EligibilitySection.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user enter mandatory fields and click review button in Declare and Acknowledge screen$",
+    "steps": [
+      {
+        "name": "user enter mandatory fields and click review button in Declare and Acknowledge screen",
+        "aggregatedDurations": {
+          "average": 11.74072894,
+          "median": 11.9448891
+        },
+        "durations": [
+          {
+            "duration": 12.2025086,
+            "location": "FormSubmission.feature:40"
+          },
+          {
+            "duration": 11.511285301,
+            "location": "FormSubmission.feature:58"
+          },
+          {
+            "duration": 11.9448891,
+            "location": "FormSubmission.feature:87"
+          },
+          {
+            "duration": 12.146391401,
+            "location": "FormSubmission.feature:98"
+          },
+          {
+            "duration": 10.898570301,
+            "location": "FormSubmission.feature:112"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks on Proceed button in My Grant Actions screen$",
+    "steps": [
+      {
+        "name": "user clicks on Proceed button in My Grant Actions screen",
+        "aggregatedDurations": {
+          "average": 2.443952917,
+          "median": 2.3229346
+        },
+        "durations": [
+          {
+            "duration": 2.525363399,
+            "location": "ContactDetailSection.feature:12"
+          },
+          {
+            "duration": 3.2878453,
+            "location": "ContactDetailSection.feature:27"
+          },
+          {
+            "duration": 2.9556239,
+            "location": "ContactDetailSection.feature:43"
+          },
+          {
+            "duration": 2.3229346,
+            "location": "ContactDetailSection.feature:60"
+          },
+          {
+            "duration": 2.9451879,
+            "location": "ContactDetailSection.feature:77"
+          },
+          {
+            "duration": 2.2771602,
+            "location": "ContactDetailSection.feature:95"
+          },
+          {
+            "duration": 2.3102559,
+            "location": "EligibilitySection.feature:12"
+          },
+          {
+            "duration": 2.234077999,
+            "location": "EligibilitySection.feature:45"
+          },
+          {
+            "duration": 2.493800501,
+            "location": "EligibilitySection.feature:77"
+          },
+          {
+            "duration": 2.8987923,
+            "location": "EligibilitySection.feature:97"
+          },
+          {
+            "duration": 2.616257599,
+            "location": "EligibilitySection.feature:113"
+          },
+          {
+            "duration": 1.9018878,
+            "location": "FormSubmission.feature:9"
+          },
+          {
+            "duration": 1.8863809,
+            "location": "FormSubmission.feature:9"
+          },
+          {
+            "duration": 2.3216164,
+            "location": "FormSubmission.feature:9"
+          },
+          {
+            "duration": 3.073937999,
+            "location": "FormSubmission.feature:9"
+          },
+          {
+            "duration": 1.7624293,
+            "location": "FormSubmission.feature:9"
+          },
+          {
+            "duration": 1.7336476,
+            "location": "FormSubmission.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verifies the following fields Name,Job Title,Contact No,Email,Alternate Contact Person\u0027s Email,Mailing Address are available in Contact Detail page$",
+    "steps": [
+      {
+        "name": "user should verifies the following fields Name,Job Title,Contact No,Email,Alternate Contact Person\u0027s Email,Mailing Address are available in Contact Detail page",
+        "aggregatedDurations": {
+          "average": 6.3026787,
+          "median": 6.3026787
+        },
+        "durations": [
+          {
+            "duration": 6.3026787,
+            "location": "ContactDetailSection.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should able to logged out successfully$",
+    "steps": [
+      {
+        "name": "user should able to logged out successfully",
+        "aggregatedDurations": {
+          "average": 1.826291773,
+          "median": 1.893005
+        },
+        "durations": [
+          {
+            "duration": 1.893005,
+            "location": "ContactDetailSection.feature:16"
+          },
+          {
+            "duration": 1.201823,
+            "location": "ContactDetailSection.feature:32"
+          },
+          {
+            "duration": 1.3171712,
+            "location": "ContactDetailSection.feature:49"
+          },
+          {
+            "duration": 2.6079554,
+            "location": "ContactDetailSection.feature:64"
+          },
+          {
+            "duration": 1.2797398,
+            "location": "ContactDetailSection.feature:83"
+          },
+          {
+            "duration": 2.1935573,
+            "location": "ContactDetailSection.feature:104"
+          },
+          {
+            "duration": 2.1716227,
+            "location": "EligibilitySection.feature:34"
+          },
+          {
+            "duration": 1.2600927,
+            "location": "EligibilitySection.feature:66"
+          },
+          {
+            "duration": 1.3020289,
+            "location": "EligibilitySection.feature:86"
+          },
+          {
+            "duration": 1.242595999,
+            "location": "EligibilitySection.feature:101"
+          },
+          {
+            "duration": 2.1154885,
+            "location": "EligibilitySection.feature:124"
+          },
+          {
+            "duration": 2.266700999,
+            "location": "FormSubmission.feature:42"
+          },
+          {
+            "duration": 2.579494401,
+            "location": "FormSubmission.feature:76"
+          },
+          {
+            "duration": 2.1910007,
+            "location": "FormSubmission.feature:91"
+          },
+          {
+            "duration": 1.7721,
+            "location": "FormSubmission.feature:119"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks for the field of same as main contact person$",
+    "steps": [
+      {
+        "name": "user clicks for the field of same as main contact person",
+        "aggregatedDurations": {
+          "average": 0.200279814,
+          "median": 0.200645
+        },
+        "durations": [
+          {
+            "duration": 0.231994199,
+            "location": "ContactDetailSection.feature:81"
+          },
+          {
+            "duration": 0.2917118,
+            "location": "ContactDetailSection.feature:99"
+          },
+          {
+            "duration": 0.1340296,
+            "location": "FormSubmission.feature:19"
+          },
+          {
+            "duration": 0.201901499,
+            "location": "FormSubmission.feature:19"
+          },
+          {
+            "duration": 0.192442701,
+            "location": "FormSubmission.feature:19"
+          },
+          {
+            "duration": 0.200645,
+            "location": "FormSubmission.feature:19"
+          },
+          {
+            "duration": 0.1492339,
+            "location": "FormSubmission.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Question \"([^\"]*)\" has following radio buttons$",
+    "steps": [
+      {
+        "name": "Question \"1\" has following radio buttons",
+        "aggregatedDurations": {
+          "average": 0.710041599,
+          "median": 0.710041599
+        },
+        "durations": [
+          {
+            "duration": 0.710041599,
+            "location": "EligibilitySection.feature:46"
+          }
+        ]
+      },
+      {
+        "name": "Question \"2\" has following radio buttons",
+        "aggregatedDurations": {
+          "average": 0.196703301,
+          "median": 0.196703301
+        },
+        "durations": [
+          {
+            "duration": 0.196703301,
+            "location": "EligibilitySection.feature:49"
+          }
+        ]
+      },
+      {
+        "name": "Question \"3\" has following radio buttons",
+        "aggregatedDurations": {
+          "average": 0.195260399,
+          "median": 0.195260399
+        },
+        "durations": [
+          {
+            "duration": 0.195260399,
+            "location": "EligibilitySection.feature:52"
+          }
+        ]
+      },
+      {
+        "name": "Question \"4\" has following radio buttons",
+        "aggregatedDurations": {
+          "average": 0.1007308,
+          "median": 0.1007308
+        },
+        "durations": [
+          {
+            "duration": 0.1007308,
+            "location": "EligibilitySection.feature:55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verifies the submitted data in Contact Details section \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user should verifies the submitted data in Contact Details section \"GovTech\" \"Software Developer\" \"65656565\" \"test@co.com\"",
+        "aggregatedDurations": {
+          "average": 0.447683501,
+          "median": 0.447683501
+        },
+        "durations": [
+          {
+            "duration": 0.447683501,
+            "location": "FormSubmission.feature:63"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user refreshes the page$",
+    "steps": [
+      {
+        "name": "user refreshes the page",
+        "aggregatedDurations": {
+          "average": 5.08807845,
+          "median": 5.08807845
+        },
+        "durations": [
+          {
+            "duration": 5.0667976,
+            "location": "ContactDetailSection.feature:102"
+          },
+          {
+            "duration": 5.1093593,
+            "location": "EligibilitySection.feature:119"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User login with own \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "User login with own \"G3377467U\" \"Testing\" \"T12LL1368D\" \"Acceptor\"",
+        "aggregatedDurations": {
+          "average": 9.157911947,
+          "median": 9.1004857
+        },
+        "durations": [
+          {
+            "duration": 10.068914801,
+            "location": "ContactDetailSection.feature:10"
+          },
+          {
+            "duration": 8.676105,
+            "location": "ContactDetailSection.feature:25"
+          },
+          {
+            "duration": 8.870353001,
+            "location": "ContactDetailSection.feature:41"
+          },
+          {
+            "duration": 9.2590541,
+            "location": "ContactDetailSection.feature:58"
+          },
+          {
+            "duration": 8.6335803,
+            "location": "ContactDetailSection.feature:75"
+          },
+          {
+            "duration": 9.009615901,
+            "location": "ContactDetailSection.feature:93"
+          },
+          {
+            "duration": 9.8378505,
+            "location": "EligibilitySection.feature:10"
+          },
+          {
+            "duration": 9.842527,
+            "location": "EligibilitySection.feature:43"
+          },
+          {
+            "duration": 9.202170001,
+            "location": "EligibilitySection.feature:75"
+          },
+          {
+            "duration": 9.5198342,
+            "location": "EligibilitySection.feature:95"
+          },
+          {
+            "duration": 9.022662301,
+            "location": "EligibilitySection.feature:111"
+          },
+          {
+            "duration": 8.4297433,
+            "location": "FormSubmission.feature:7"
+          },
+          {
+            "duration": 9.0805721,
+            "location": "FormSubmission.feature:7"
+          },
+          {
+            "duration": 9.531400201,
+            "location": "FormSubmission.feature:7"
+          },
+          {
+            "duration": 9.111318099,
+            "location": "FormSubmission.feature:7"
+          },
+          {
+            "duration": 9.1004857,
+            "location": "FormSubmission.feature:7"
+          },
+          {
+            "duration": 8.4883166,
+            "location": "FormSubmission.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user navigates to \"([^\"]*)\" screen$",
+    "steps": [
+      {
+        "name": "user navigates to \"Contact Details\" screen",
+        "aggregatedDurations": {
+          "average": 2.928067784,
+          "median": 2.9359993
+        },
+        "durations": [
+          {
+            "duration": 3.1500475,
+            "location": "ContactDetailSection.feature:13"
+          },
+          {
+            "duration": 2.7999469,
+            "location": "ContactDetailSection.feature:28"
+          },
+          {
+            "duration": 2.8261828,
+            "location": "ContactDetailSection.feature:44"
+          },
+          {
+            "duration": 3.2136589,
+            "location": "ContactDetailSection.feature:61"
+          },
+          {
+            "duration": 2.9359993,
+            "location": "ContactDetailSection.feature:78"
+          },
+          {
+            "duration": 3.0407309,
+            "location": "ContactDetailSection.feature:96"
+          },
+          {
+            "duration": 2.907070399,
+            "location": "FormSubmission.feature:15"
+          },
+          {
+            "duration": 2.9639653,
+            "location": "FormSubmission.feature:15"
+          },
+          {
+            "duration": 2.960912099,
+            "location": "FormSubmission.feature:15"
+          },
+          {
+            "duration": 2.778208,
+            "location": "FormSubmission.feature:62"
+          },
+          {
+            "duration": 2.8952814,
+            "location": "FormSubmission.feature:15"
+          },
+          {
+            "duration": 3.129679999,
+            "location": "FormSubmission.feature:15"
+          },
+          {
+            "duration": 2.463197701,
+            "location": "FormSubmission.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "user navigates to \"Proposal\" screen",
+        "aggregatedDurations": {
+          "average": 2.94651435,
+          "median": 3.00013165
+        },
+        "durations": [
+          {
+            "duration": 3.136921901,
+            "location": "FormSubmission.feature:21"
+          },
+          {
+            "duration": 2.998868,
+            "location": "FormSubmission.feature:21"
+          },
+          {
+            "duration": 2.8747449,
+            "location": "FormSubmission.feature:64"
+          },
+          {
+            "duration": 3.0013953,
+            "location": "FormSubmission.feature:21"
+          },
+          {
+            "duration": 3.1035615,
+            "location": "FormSubmission.feature:21"
+          },
+          {
+            "duration": 2.563594501,
+            "location": "FormSubmission.feature:21"
+          }
+        ]
+      },
+      {
+        "name": "user navigates to \"Business Impact\" screen",
+        "aggregatedDurations": {
+          "average": 2.769625766,
+          "median": 2.845855249
+        },
+        "durations": [
+          {
+            "duration": 2.8549891,
+            "location": "FormSubmission.feature:26"
+          },
+          {
+            "duration": 2.836721399,
+            "location": "FormSubmission.feature:26"
+          },
+          {
+            "duration": 2.874442,
+            "location": "FormSubmission.feature:67"
+          },
+          {
+            "duration": 2.703125,
+            "location": "FormSubmission.feature:26"
+          },
+          {
+            "duration": 2.9033693,
+            "location": "FormSubmission.feature:26"
+          },
+          {
+            "duration": 2.4451078,
+            "location": "FormSubmission.feature:26"
+          }
+        ]
+      },
+      {
+        "name": "user navigates to \"Eligibility\" screen",
+        "aggregatedDurations": {
+          "average": 2.836117301,
+          "median": 2.836117301
+        },
+        "durations": [
+          {
+            "duration": 2.836117301,
+            "location": "FormSubmission.feature:59"
+          }
+        ]
+      },
+      {
+        "name": "user navigates to \"Cost\" screen",
+        "aggregatedDurations": {
+          "average": 2.7960417,
+          "median": 2.7960417
+        },
+        "durations": [
+          {
+            "duration": 2.7960417,
+            "location": "FormSubmission.feature:70"
+          }
+        ]
+      },
+      {
+        "name": "user navigates to \"Declare \u0026 Review\" screen",
+        "aggregatedDurations": {
+          "average": 2.629821625,
+          "median": 2.69885035
+        },
+        "durations": [
+          {
+            "duration": 2.7568854,
+            "location": "FormSubmission.feature:73"
+          },
+          {
+            "duration": 2.6554559,
+            "location": "FormSubmission.feature:88"
+          },
+          {
+            "duration": 2.7422448,
+            "location": "FormSubmission.feature:99"
+          },
+          {
+            "duration": 2.3647004,
+            "location": "FormSubmission.feature:113"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^a website is launched in another window with url \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "a website is launched in another window with url \"https://www.smeportal.sg/content/smeportal/en/moneymatters.html#saText\"",
+        "aggregatedDurations": {
+          "average": 5.300035799,
+          "median": 5.300035799
+        },
+        "durations": [
+          {
+            "duration": 5.300035799,
+            "location": "EligibilitySection.feature:100"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should able to enter the values in the field \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user should able to enter the values in the field \"GovTech\" \"Software Developer\" \"65656565\" \"test@co.com\"",
+        "aggregatedDurations": {
+          "average": 10.297444737,
+          "median": 10.34660465
+        },
+        "durations": [
+          {
+            "duration": 10.8415532,
+            "location": "ContactDetailSection.feature:80"
+          },
+          {
+            "duration": 10.5046015,
+            "location": "ContactDetailSection.feature:98"
+          },
+          {
+            "duration": 10.4126253,
+            "location": "FormSubmission.feature:17"
+          },
+          {
+            "duration": 10.280584,
+            "location": "FormSubmission.feature:17"
+          },
+          {
+            "duration": 10.214165601,
+            "location": "FormSubmission.feature:17"
+          },
+          {
+            "duration": 10.5646475,
+            "location": "FormSubmission.feature:17"
+          },
+          {
+            "duration": 10.2420528,
+            "location": "FormSubmission.feature:17"
+          },
+          {
+            "duration": 9.319328,
+            "location": "FormSubmission.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks on Smart Adviser Link$",
+    "steps": [
+      {
+        "name": "user clicks on Smart Adviser Link",
+        "aggregatedDurations": {
+          "average": 0.1589443,
+          "median": 0.1589443
+        },
+        "durations": [
+          {
+            "duration": 0.1589443,
+            "location": "EligibilitySection.feature:99"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user verifies the text \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user verifies the text \"PROVIDE YOUR CONTACT DETAILS\"",
+        "aggregatedDurations": {
+          "average": 2.142787066,
+          "median": 2.146020499
+        },
+        "durations": [
+          {
+            "duration": 2.181053001,
+            "location": "ContactDetailSection.feature:14"
+          },
+          {
+            "duration": 2.1435728,
+            "location": "ContactDetailSection.feature:29"
+          },
+          {
+            "duration": 2.1525279,
+            "location": "ContactDetailSection.feature:45"
+          },
+          {
+            "duration": 2.173268,
+            "location": "ContactDetailSection.feature:62"
+          },
+          {
+            "duration": 2.1680417,
+            "location": "ContactDetailSection.feature:79"
+          },
+          {
+            "duration": 2.148468199,
+            "location": "ContactDetailSection.feature:97"
+          },
+          {
+            "duration": 2.136420201,
+            "location": "FormSubmission.feature:16"
+          },
+          {
+            "duration": 2.1335355,
+            "location": "FormSubmission.feature:16"
+          },
+          {
+            "duration": 2.1254618,
+            "location": "FormSubmission.feature:16"
+          },
+          {
+            "duration": 2.1489006,
+            "location": "FormSubmission.feature:16"
+          },
+          {
+            "duration": 2.139518601,
+            "location": "FormSubmission.feature:16"
+          },
+          {
+            "duration": 2.062676499,
+            "location": "FormSubmission.feature:16"
+          }
+        ]
+      },
+      {
+        "name": "user verifies the text \"SUBMIT YOUR PROPOSAL\"",
+        "aggregatedDurations": {
+          "average": 2.11101424,
+          "median": 2.1126458
+        },
+        "durations": [
+          {
+            "duration": 2.176903299,
+            "location": "FormSubmission.feature:22"
+          },
+          {
+            "duration": 2.1126458,
+            "location": "FormSubmission.feature:22"
+          },
+          {
+            "duration": 2.126684801,
+            "location": "FormSubmission.feature:22"
+          },
+          {
+            "duration": 2.0786676,
+            "location": "FormSubmission.feature:22"
+          },
+          {
+            "duration": 2.0601697,
+            "location": "FormSubmission.feature:22"
+          }
+        ]
+      },
+      {
+        "name": "user verifies the text \"EXPLAIN THE BUSINESS IMPACT\"",
+        "aggregatedDurations": {
+          "average": 2.111968039,
+          "median": 2.1265891
+        },
+        "durations": [
+          {
+            "duration": 2.139367799,
+            "location": "FormSubmission.feature:27"
+          },
+          {
+            "duration": 2.128754699,
+            "location": "FormSubmission.feature:27"
+          },
+          {
+            "duration": 2.1265891,
+            "location": "FormSubmission.feature:27"
+          },
+          {
+            "duration": 2.1216305,
+            "location": "FormSubmission.feature:27"
+          },
+          {
+            "duration": 2.0434981,
+            "location": "FormSubmission.feature:27"
+          }
+        ]
+      },
+      {
+        "name": "user verifies the text \"PROVIDE DETAILS OF COSTS\"",
+        "aggregatedDurations": {
+          "average": 2.132329779,
+          "median": 2.144015499
+        },
+        "durations": [
+          {
+            "duration": 2.144015499,
+            "location": "FormSubmission.feature:30"
+          },
+          {
+            "duration": 2.162717299,
+            "location": "FormSubmission.feature:30"
+          },
+          {
+            "duration": 2.1279956,
+            "location": "FormSubmission.feature:30"
+          },
+          {
+            "duration": 2.1581415,
+            "location": "FormSubmission.feature:30"
+          },
+          {
+            "duration": 2.068779,
+            "location": "FormSubmission.feature:30"
+          }
+        ]
+      },
+      {
+        "name": "user verifies the text \"DECLARE \u0026 ACKNOWLEDGE TERMS\"",
+        "aggregatedDurations": {
+          "average": 2.13649218,
+          "median": 2.141059701
+        },
+        "durations": [
+          {
+            "duration": 2.141059701,
+            "location": "FormSubmission.feature:33"
+          },
+          {
+            "duration": 2.150987499,
+            "location": "FormSubmission.feature:33"
+          },
+          {
+            "duration": 2.1918336,
+            "location": "FormSubmission.feature:33"
+          },
+          {
+            "duration": 2.1222791,
+            "location": "FormSubmission.feature:33"
+          },
+          {
+            "duration": 2.076301,
+            "location": "FormSubmission.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verifies the submitted data in Business Impact screen$",
+    "steps": [
+      {
+        "name": "user should verifies the submitted data in Business Impact screen",
+        "aggregatedDurations": {
+          "average": 0.7395116,
+          "median": 0.7395116
+        },
+        "durations": [
+          {
+            "duration": 0.7395116,
+            "location": "FormSubmission.feature:68"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Launching the browser$",
+    "steps": [
+      {
+        "name": "Launching the browser",
+        "aggregatedDurations": {
+          "average": 5.677709482,
+          "median": 5.3882887
+        },
+        "durations": [
+          {
+            "duration": 7.881374301,
+            "location": "ContactDetailSection.feature:6"
+          },
+          {
+            "duration": 5.3882887,
+            "location": "ContactDetailSection.feature:6"
+          },
+          {
+            "duration": 6.032612799,
+            "location": "ContactDetailSection.feature:6"
+          },
+          {
+            "duration": 4.9179914,
+            "location": "ContactDetailSection.feature:6"
+          },
+          {
+            "duration": 7.465948301,
+            "location": "ContactDetailSection.feature:6"
+          },
+          {
+            "duration": 5.578980999,
+            "location": "ContactDetailSection.feature:6"
+          },
+          {
+            "duration": 5.366361499,
+            "location": "EligibilitySection.feature:6"
+          },
+          {
+            "duration": 5.546388199,
+            "location": "EligibilitySection.feature:6"
+          },
+          {
+            "duration": 5.808141101,
+            "location": "EligibilitySection.feature:6"
+          },
+          {
+            "duration": 5.5763749,
+            "location": "EligibilitySection.feature:6"
+          },
+          {
+            "duration": 5.0956584,
+            "location": "EligibilitySection.feature:6"
+          },
+          {
+            "duration": 5.2135373,
+            "location": "FormSubmission.feature:6"
+          },
+          {
+            "duration": 5.2176903,
+            "location": "FormSubmission.feature:6"
+          },
+          {
+            "duration": 5.817724599,
+            "location": "FormSubmission.feature:6"
+          },
+          {
+            "duration": 5.3419238,
+            "location": "FormSubmission.feature:6"
+          },
+          {
+            "duration": 4.952519001,
+            "location": "FormSubmission.feature:6"
+          },
+          {
+            "duration": 5.319545599,
+            "location": "FormSubmission.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user validates the postal code \"([^\"]*)\" , Level \"([^\"]*)\" , and Unit \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user validates the postal code \"453123\" , Level \"03\" , and Unit \"19\"",
+        "aggregatedDurations": {
+          "average": 2.258912501,
+          "median": 2.258912501
+        },
+        "durations": [
+          {
+            "duration": 2.258912501,
+            "location": "ContactDetailSection.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^verifies the value populate in subsection of the Letter of office Addrssee \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "verifies the value populate in subsection of the Letter of office Addrssee \"GovTech\" \"Software Developer\" \"test@co.com\"",
+        "aggregatedDurations": {
+          "average": 2.217254566,
+          "median": 2.247502
+        },
+        "durations": [
+          {
+            "duration": 2.247502,
+            "location": "ContactDetailSection.feature:82"
+          },
+          {
+            "duration": 2.2675507,
+            "location": "ContactDetailSection.feature:100"
+          },
+          {
+            "duration": 2.136711,
+            "location": "ContactDetailSection.feature:103"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user enter mandatory fields and click next button in Business Impact screen$",
+    "steps": [
+      {
+        "name": "user enter mandatory fields and click next button in Business Impact screen",
+        "aggregatedDurations": {
+          "average": 27.34858814,
+          "median": 27.7876291
+        },
+        "durations": [
+          {
+            "duration": 27.769886899,
+            "location": "FormSubmission.feature:28"
+          },
+          {
+            "duration": 27.892787701,
+            "location": "FormSubmission.feature:28"
+          },
+          {
+            "duration": 28.2709199,
+            "location": "FormSubmission.feature:28"
+          },
+          {
+            "duration": 27.7876291,
+            "location": "FormSubmission.feature:28"
+          },
+          {
+            "duration": 25.0217171,
+            "location": "FormSubmission.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verifies the submitted data in Proposal screen$",
+    "steps": [
+      {
+        "name": "user should verifies the submitted data in Proposal screen",
+        "aggregatedDurations": {
+          "average": 0.401780201,
+          "median": 0.401780201
+        },
+        "durations": [
+          {
+            "duration": 0.401780201,
+            "location": "FormSubmission.feature:65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verifies the text \"([^\"]*)\" in read only summary page$",
+    "steps": [
+      {
+        "name": "user should verifies the text \"Review Your Application\" in read only summary page",
+        "aggregatedDurations": {
+          "average": 1.1687237,
+          "median": 1.1687237
+        },
+        "durations": [
+          {
+            "duration": 1.1687237,
+            "location": "FormSubmission.feature:41"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="17" time="1531.004249">
+<testcase classname="Contact Detail Section" name="Verify that user should able to view the subsection of the Main Contact Person" time="59.578179">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+And user should verifies the following fields Name,Job Title,Contact No,Email,Alternate Contact Person's Email,Mailing Address are available in Contact Detail page.passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact Detail Section" name="Verify that user should able to validate the auto populate values Blk/Hse No and Street details" time="53.628597">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user should able to enter the postal code "460096"in mailing address...passed
+Then user verifies Blk/Hse No "96" and Street "BEDOK NORTH AVENUE 4" should autopopulate.passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact Detail Section" name="Verify that user should able to validate the auto populate values when click checkbox ‘Same as registered address in Company Profile’" time="54.066512">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user clicks on checkbox for the field Same as registered address in Company Profile.passed
+Then user validates the postal code "453123" , Level "03" , and Unit "19"...passed
+And user verifies Blk/Hse No "45" and Street "CHOA CHU KANG CENTRAL" should autopopulate.passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact Detail Section" name="Verify that user should able to view the subsection of the Letter of Office Addressee" time="53.549237">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+And user should verfies the following fields Name, Job Title, Email.........passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact Detail Section" name="Verify that user should able to validate the auto populate values when click checkbox 'Same as main contact person'" time="63.782368">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com".passed
+And user clicks for the field of same as main contact person................passed
+Then verifies the value populate in subsection of the Letter of office Addrssee "GovTech" "Software Developer" "test@co.com".passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact Detail Section" name="Verify that user should able to validate the saved values after refresh the page" time="69.923023">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com".passed
+And user clicks for the field of same as main contact person................passed
+Then verifies the value populate in subsection of the Letter of office Addrssee "GovTech" "Software Developer" "test@co.com".passed
+When user clicks on save button.............................................passed
+And user refreshes the page.................................................passed
+Then verifies the value populate in subsection of the Letter of office Addrssee "GovTech" "Software Developer" "test@co.com".passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Eligibility Section" name="Verify that user should able to access the Four questions in the Eligibility section" time="46.595051">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+Then Question "1" is displayed as follows...................................passed
+Then Question "2" is displayed as follows...................................passed
+Then Question "3" is displayed as follows...................................passed
+Then Question "4" is displayed as follows...................................passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Eligibility Section" name="verifying the radio buttons Yes/No is displayed for each question and able to select Yes/No radio" time="64.43529">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+Then Question "1" has following radio buttons...............................passed
+Then Question "2" has following radio buttons...............................passed
+Then Question "3" has following radio buttons...............................passed
+Then Question "4" has following radio buttons...............................passed
+When user selects the radio button as "Yes" and verified for the question 1.passed
+When user selects the radio button as "No" and verified for the question 1..passed
+When user selects the radio button as "Yes" and verified for the question 2.passed
+When user selects the radio button as "No" and verified for the question 2..passed
+When user selects the radio button as "Yes" and verified for the question 3.passed
+When user selects the radio button as "No" and verified for the question 3..passed
+When user selects the radio button as "Yes" and verified for the question 4.passed
+When user selects the radio button as "No" and verified for the question 4..passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Eligibility Section" name="verifying the warning message on selecting &quot;No&quot; radio button for any of the question" time="56.357245">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user selects the radio button as "No" and verified for the question 1..passed
+Then warning message "Visit Smart Advisor on the SME Portal for more information on other government assistance." is displayed for question 1.passed
+When user selects the radio button as "No" and verified for the question 2..passed
+Then warning message "Visit Smart Advisor on the SME Portal for more information on other government assistance." is displayed for question 2.passed
+When user selects the radio button as "No" and verified for the question 3..passed
+Then warning message "Visit Smart Advisor on the SME Portal for more information on other government assistance." is displayed for question 3.passed
+When user selects the radio button as "No" and verified for the question 4..passed
+Then warning message "Visit Smart Advisor on the SME Portal for more information on other government assistance." is displayed for question 4.passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Eligibility Section" name="verifying the warning message link is open in new tab" time="52.010267">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user selects the radio button as "No" and verified for the question 1..passed
+When user clicks on Smart Adviser Link......................................passed
+Then a website is launched in another window with url "https://www.smeportal.sg/content/smeportal/en/moneymatters.html#saText".passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Eligibility Section" name="Verify that user should able to validate the saved values after refresh the page" time="59.290789">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user selects the radio button as "Yes" and verified for the question 1.passed
+When user selects the radio button as "Yes" and verified for the question 2.passed
+When user selects the radio button as "Yes" and verified for the question 3.passed
+When user selects the radio button as "No" and verified for the question 4..passed
+When user clicks on save button.............................................passed
+And user refreshes the page.................................................passed
+Then "Yes" radio is selected for question "1"...............................passed
+Then "Yes" radio is selected for question "2"...............................passed
+Then "Yes" radio is selected for question "3"...............................passed
+Then "No" radio is selected for question "4"................................passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Form Submission Section" name="Verify that user should able to enter all the mandatory fields and navigate to read only summary page" time="145.43353">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user selects the radio button as "Yes" and verified for the question 1.passed
+When user selects the radio button as "Yes" and verified for the question 2.passed
+When user selects the radio button as "Yes" and verified for the question 3.passed
+When user selects the radio button as "Yes" and verified for the question 4.passed
+When user clicks on save button.............................................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com".passed
+When user clicks on checkbox for the field Same as registered address in Company Profile.passed
+And user clicks for the field of same as main contact person................passed
+When user clicks on save button.............................................passed
+When user navigates to "Proposal" screen....................................passed
+Then user verifies the text "SUBMIT YOUR PROPOSAL"..........................passed
+When user enter mandatory fields and click next in proposal screen..........passed
+When user clicks on save button.............................................passed
+When user navigates to "Business Impact" screen.............................passed
+Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"...................passed
+When user enter mandatory fields and click next button in Business Impact screen.passed
+Then user verifies the text "PROVIDE DETAILS OF COSTS"......................passed
+When user enter mandatory fields and click next button in Cost screen.......passed
+Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"...................passed
+When user enter mandatory fields and click review button in Declare and Acknowledge screen.passed
+Then user should verifies the text "Review Your Application" in read only summary page.passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Form Submission Section" name="Verify that user should able to enter all the mandatory fields and navigate to read only summary page" time="55.005597">
+<failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; id=&quot;react-contact_info-correspondence_address-copied&quot; value=&quot;on&quot;&gt; is not clickable at point (481, 751). Other element would receive the click: &lt;label class=&quot;control-label bgp-label&quot;&gt;...&lt;/label&gt;&#10;  (Session info: chrome=77.0.3865.90)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-1SK9A0Q', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Jeevan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}&#10;Session ID: 72977efa36d383e8dcf17ae6f7074786&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at com.palo.techtest.StepLibrary.CommonLibrary.isElementPresentVerifyClick(CommonLibrary.java:227)&#13;&#10;&#9;at com.palo.techtest.StepLibrary.ContactDetailsLibrary.clickOnCheckBox(ContactDetailsLibrary.java:67)&#13;&#10;&#9;at com.palo.techtest.StepDefinition.ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile(ContactDetailsSteps.java:29)&#13;&#10;&#9;at ✽.When user clicks on checkbox for the field Same as registered address in Company Profile(FormSubmission.feature:18)&#13;&#10;"><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user selects the radio button as "Yes" and verified for the question 1.passed
+When user selects the radio button as "Yes" and verified for the question 2.passed
+When user selects the radio button as "Yes" and verified for the question 3.passed
+When user selects the radio button as "Yes" and verified for the question 4.passed
+When user clicks on save button.............................................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com".passed
+When user clicks on checkbox for the field Same as registered address in Company Profile.failed
+And user clicks for the field of same as main contact person................skipped
+When user clicks on save button.............................................skipped
+When user navigates to "Proposal" screen....................................skipped
+Then user verifies the text "SUBMIT YOUR PROPOSAL"..........................skipped
+When user enter mandatory fields and click next in proposal screen..........skipped
+When user clicks on save button.............................................skipped
+When user navigates to "Business Impact" screen.............................skipped
+Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"...................skipped
+When user enter mandatory fields and click next button in Business Impact screen.skipped
+Then user verifies the text "PROVIDE DETAILS OF COSTS"......................skipped
+When user enter mandatory fields and click next button in Cost screen.......skipped
+Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"...................skipped
+Then user should verify the error message "Select an option" for the missing field.skipped
+And user should able to logged out successfully.............................skipped
+And close browser...........................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" id="react-contact_info-correspondence_address-copied" value="on"> is not clickable at point (481, 751). Other element would receive the click: <label class="control-label bgp-label">...</label>
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1SK9A0Q', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Jeevan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: 72977efa36d383e8dcf17ae6f7074786
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.palo.techtest.StepLibrary.CommonLibrary.isElementPresentVerifyClick(CommonLibrary.java:227)
+	at com.palo.techtest.StepLibrary.ContactDetailsLibrary.clickOnCheckBox(ContactDetailsLibrary.java:67)
+	at com.palo.techtest.StepDefinition.ContactDetailsSteps.user_clicks_on_checkbox_for_the_field_Same_as_registered_address_in_Company_Profile(ContactDetailsSteps.java:29)
+	at ✽.When user clicks on checkbox for the field Same as registered address in Company Profile(FormSubmission.feature:18)
+]]></failure>
+</testcase>
+<testcase classname="Form Submission Section" name="User should verifies read-only summary page should correctly contain all the details previously filled in each form section." time="165.582222">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user selects the radio button as "Yes" and verified for the question 1.passed
+When user selects the radio button as "Yes" and verified for the question 2.passed
+When user selects the radio button as "Yes" and verified for the question 3.passed
+When user selects the radio button as "Yes" and verified for the question 4.passed
+When user clicks on save button.............................................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com".passed
+When user clicks on checkbox for the field Same as registered address in Company Profile.passed
+And user clicks for the field of same as main contact person................passed
+When user clicks on save button.............................................passed
+When user navigates to "Proposal" screen....................................passed
+Then user verifies the text "SUBMIT YOUR PROPOSAL"..........................passed
+When user enter mandatory fields and click next in proposal screen..........passed
+When user clicks on save button.............................................passed
+When user navigates to "Business Impact" screen.............................passed
+Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"...................passed
+When user enter mandatory fields and click next button in Business Impact screen.passed
+Then user verifies the text "PROVIDE DETAILS OF COSTS"......................passed
+When user enter mandatory fields and click next button in Cost screen.......passed
+Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"...................passed
+When user enter mandatory fields and click review button in Declare and Acknowledge screen.passed
+When user navigates to "Eligibility" screen.................................passed
+Then user should verifies the submitted data in Eligibility section.........passed
+When user navigates to "Contact Details" screen.............................passed
+And user should verifies the submitted data in Contact Details section "GovTech" "Software Developer" "65656565" "test@co.com".passed
+When user navigates to "Proposal" screen....................................passed
+Then user should verifies the submitted data in Proposal screen.............passed
+When user navigates to "Business Impact" screen.............................passed
+Then user should verifies the submitted data in Business Impact screen......passed
+When user navigates to "Cost" screen........................................passed
+Then user should verifies the submitted data in Costs screen................passed
+When user navigates to "Declare & Review" screen............................passed
+And user should verifies the submitted data in Declare and review screen....passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Form Submission Section" name="Verify that user should able to enter all the mandatory fields and navigate to read only summary page" time="150.834325">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user selects the radio button as "Yes" and verified for the question 1.passed
+When user selects the radio button as "Yes" and verified for the question 2.passed
+When user selects the radio button as "Yes" and verified for the question 3.passed
+When user selects the radio button as "Yes" and verified for the question 4.passed
+When user clicks on save button.............................................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com".passed
+When user clicks on checkbox for the field Same as registered address in Company Profile.passed
+And user clicks for the field of same as main contact person................passed
+When user clicks on save button.............................................passed
+When user navigates to "Proposal" screen....................................passed
+Then user verifies the text "SUBMIT YOUR PROPOSAL"..........................passed
+When user enter mandatory fields and click next in proposal screen..........passed
+When user clicks on save button.............................................passed
+When user navigates to "Business Impact" screen.............................passed
+Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"...................passed
+When user enter mandatory fields and click next button in Business Impact screen.passed
+Then user verifies the text "PROVIDE DETAILS OF COSTS"......................passed
+When user enter mandatory fields and click next button in Cost screen.......passed
+Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"...................passed
+When user enter mandatory fields and click review button in Declare and Acknowledge screen.passed
+And user navigates to "Declare & Review" screen.............................passed
+Then user should verifies the submitted data in Declare and review screen...passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Form Submission Section" name="Verify that user should able to submit the application successfully" time="232.237558">
+<failure message="org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document&#10;  (Session info: chrome=77.0.3865.90)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-1SK9A0Q', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Jeevan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54048}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}&#10;Session ID: 0fd6f411239755a4880ed343c4a6c15f&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)&#13;&#10;&#9;at com.palo.techtest.StepLibrary.CommonLibrary.getElementText(CommonLibrary.java:105)&#13;&#10;&#9;at com.palo.techtest.StepLibrary.FormSubmissionLibrary.validDeclareAndReviewValues(FormSubmissionLibrary.java:154)&#13;&#10;&#9;at com.palo.techtest.StepDefinition.FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Declare_and_review_screen(FormSubmissionSteps.java:61)&#13;&#10;&#9;at ✽.Then user should verifies the submitted data in Declare and review screen(FormSubmission.feature:100)&#13;&#10;"><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user selects the radio button as "Yes" and verified for the question 1.passed
+When user selects the radio button as "Yes" and verified for the question 2.passed
+When user selects the radio button as "Yes" and verified for the question 3.passed
+When user selects the radio button as "Yes" and verified for the question 4.passed
+When user clicks on save button.............................................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com".passed
+When user clicks on checkbox for the field Same as registered address in Company Profile.passed
+And user clicks for the field of same as main contact person................passed
+When user clicks on save button.............................................passed
+When user navigates to "Proposal" screen....................................passed
+Then user verifies the text "SUBMIT YOUR PROPOSAL"..........................passed
+When user enter mandatory fields and click next in proposal screen..........passed
+When user clicks on save button.............................................passed
+When user navigates to "Business Impact" screen.............................passed
+Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"...................passed
+When user enter mandatory fields and click next button in Business Impact screen.passed
+Then user verifies the text "PROVIDE DETAILS OF COSTS"......................passed
+When user enter mandatory fields and click next button in Cost screen.......passed
+Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"...................passed
+When user enter mandatory fields and click review button in Declare and Acknowledge screen.passed
+And user navigates to "Declare & Review" screen.............................passed
+Then user should verifies the submitted data in Declare and review screen...failed
+And user should able to submit My Grant Application.........................skipped
+Then user should verify the success message contain "Ref ID:" and "Enterprise Singapore".skipped
+And user should able to logged out successfully.............................skipped
+And close browser...........................................................skipped
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1SK9A0Q', ip: '192.168.1.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Jeevan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54048}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept}
+Session ID: 0fd6f411239755a4880ed343c4a6c15f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at com.palo.techtest.StepLibrary.CommonLibrary.getElementText(CommonLibrary.java:105)
+	at com.palo.techtest.StepLibrary.FormSubmissionLibrary.validDeclareAndReviewValues(FormSubmissionLibrary.java:154)
+	at com.palo.techtest.StepDefinition.FormSubmissionSteps.user_should_verifies_the_submitted_data_in_Declare_and_review_screen(FormSubmissionSteps.java:61)
+	at ✽.Then user should verifies the submitted data in Declare and review screen(FormSubmission.feature:100)
+]]></failure>
+</testcase>
+<testcase classname="Form Submission Section" name="Verify that user should able to see the submitted application is displayed under processing tab" time="148.694459">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+Given User login with own "G3377467U" "Testing" "T12LL1368D" "Acceptor".....passed
+When user creates a new Grant...............................................passed
+And user clicks on Proceed button in My Grant Actions screen................passed
+When user selects the radio button as "Yes" and verified for the question 1.passed
+When user selects the radio button as "Yes" and verified for the question 2.passed
+When user selects the radio button as "Yes" and verified for the question 3.passed
+When user selects the radio button as "Yes" and verified for the question 4.passed
+When user clicks on save button.............................................passed
+When user navigates to "Contact Details" screen.............................passed
+Then user verifies the text "PROVIDE YOUR CONTACT DETAILS"..................passed
+When user should able to enter the values in the field "GovTech" "Software Developer" "65656565" "test@co.com".passed
+When user clicks on checkbox for the field Same as registered address in Company Profile.passed
+And user clicks for the field of same as main contact person................passed
+When user clicks on save button.............................................passed
+When user navigates to "Proposal" screen....................................passed
+Then user verifies the text "SUBMIT YOUR PROPOSAL"..........................passed
+When user enter mandatory fields and click next in proposal screen..........passed
+When user clicks on save button.............................................passed
+When user navigates to "Business Impact" screen.............................passed
+Then user verifies the text "EXPLAIN THE BUSINESS IMPACT"...................passed
+When user enter mandatory fields and click next button in Business Impact screen.passed
+Then user verifies the text "PROVIDE DETAILS OF COSTS"......................passed
+When user enter mandatory fields and click next button in Cost screen.......passed
+Then user verifies the text "DECLARE & ACKNOWLEDGE TERMS"...................passed
+When user enter mandatory fields and click review button in Declare and Acknowledge screen.passed
+And user navigates to "Declare & Review" screen.............................passed
+Then user should verifies the submitted data in Declare and review screen...passed
+And user should able to submit My Grant Application.........................passed
+Then user should verify the success message contain "Ref ID:" and "Enterprise Singapore".passed
+When user clicks on "My Grants" in Main menu and verifies the submitted application is displayed.passed
+And user should able to logged out successfully.............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
